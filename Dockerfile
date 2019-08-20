@@ -4,4 +4,4 @@ VOLUME /tmp
 ADD ./build/libs/evaluate-0.0.1-SNAPSHOT.jar app.jar
 ENV JAVA_OPTS=""
 ENV ENV1=dev
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom -Dspring.profiles.active=${ENV1}","-jar","/app.jar"]
+ENTRYPOINT ["java","-jar","-Djava.security.egd=file:/dev/./urandom -Dspring.profiles.active=${ENV1}","/app.jar"]
