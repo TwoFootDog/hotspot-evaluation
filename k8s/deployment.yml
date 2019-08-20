@@ -4,7 +4,7 @@ metadata:
   name: sample-gs-spring-boot-docker # deployment name -> kubectl get deployment
   labels:
     app: sample-gs-spring-boot-docker
-spec:
+spec:DEPDEV
   replicas: 1 # number of pod
   selector:
     matchLabels:

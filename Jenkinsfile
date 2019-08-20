@@ -29,7 +29,7 @@ podTemplate(label:label,
 
         stage('BUILD') {
             container('maven') {
-                mavenBuild goal: 'clean package', systemProperties:['maven.repo.local':"/root/.m2/${JOB_NAME}"], globalSettingsID: 'DEPDEV-REPO'
+                mavenBuild goal: 'clean package -Pdev', systemProperties:['maven.repo.local':"/root/.m2/${JOB_NAME}"], globalSettingsID: 'DEPDEV-REPO'
             }
         }
 
