@@ -28,12 +28,8 @@ podTemplate(label:label,
         }
 
         stage('BUILD') {
-            //container('gradle') {
-            //    mavenBuild goal: 'clean package', systemProperties:['maven.repo.local':"/root/.m2/${JOB_NAME}"], globalSettingsID: 'DEPDEV-REPO'
-            //}
-            steps {
-                sh 'chmod +x gradlew'
-                sh './gradlew -x test clean build'
+            container('maven') {
+                mavenBuild goal: 'clean package', systemProperties:['maven.repo.local':"/root/.m2/${JOB_NAME}"], globalSettingsID: 'DEPDEV-REPO'
             }
         }
 
