@@ -30,7 +30,7 @@ server:
   port: 11000
 
 spring:
-  profiles: dev
+  profiles: @activatedProperties@
 
   jackson:
     serialization:
