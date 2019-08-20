@@ -28,6 +28,8 @@ spring:
 
 server:
   port: 11000
+  servlet:
+    context-path: /evaluation
 
 spring:
   profiles: local
