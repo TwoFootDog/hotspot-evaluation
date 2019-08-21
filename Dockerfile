@@ -1,7 +1,7 @@
 #FROM openjdk:8-jdk-alpine
 FROM dep-dev-registry.cloudzcp.io/library/openjdk:8-jdk-alpine
 VOLUME /tmp
-EXPOSE 8080/tcp
+EXPOSE 8080/TCP
 #ADD target/gs-spring-boot-docker-0.1.0.jar app.jar
 ADD target/evaluation-0.0.1-SNAPSHOT.jar app.jar
 ENV JAVA_OPTS=""
