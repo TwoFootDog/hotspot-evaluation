@@ -16,10 +16,10 @@ spring:
       WRITE_DATES_AS_TIMESTAMPS: false
 
   datasource:
-    url: jdbc:mariadb://10.178.230.98/hostpot_evaluation
+    url: jdbc:mariadb://10.178.230.98/hotspot_evaluation
     driver-class-name: org.mariadb.jdbc.Driver
-    username: evaluationuser
-    password: evaluationuser
+    username: hotspot_evaluation_user
+    password: 1111
 
   jpa:
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
