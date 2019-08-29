@@ -47,8 +47,7 @@ public class EvaluateApplicationTests {
     @Test
     public void categoryApiTest() throws Exception {
         mockMvc.perform(get("/category"))
-                .andExpect(status().isOk())
-                .andDo(print());
+                .andExpect(status().isOk());
     }
 
     @Test
