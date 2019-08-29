@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: hotspot-evaluation
-          image: dep-dev-registry.cloudzcp.io/sample/hotspot-evaluation:1
+          image: dep-dev-registry.cloudzcp.io/hotspot/hotspot-evaluation:1
       imagePullSecrets:
         - name: jonas-secret
 #        ports:

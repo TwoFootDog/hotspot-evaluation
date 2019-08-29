@@ -2,8 +2,8 @@
 
 def label = "jenkins-${UUID.randomUUID().toString()}"
 
-def ZCP_USERID='05867'
-def DOCKER_IMAGE='sample/hotspot-evaluation'
+def ZCP_USERID='jenkins'
+def DOCKER_IMAGE='hotspot/hotspot-evaluation'
 def K8S_NAMESPACE='dex-dev'
 
 podTemplate(label:label,
